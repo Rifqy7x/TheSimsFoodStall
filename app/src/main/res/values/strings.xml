@@ -2,7 +2,8 @@
     <string name="app_name">The Sims Food Stall</string>
     <string name="beli">Pembeli</string>
     <string name="jual">Penjual</string>
-
+    <string name="deskripsi">Aplikasi The Sims Food Stall adalah aplikasi simulasi bagaimana sistem warteg online berlangsung, pengguna akan disajikan 2 <i>POV</i> yaitu penjual dan pembeli, juga pengguna dapat melihat hasil dari proses enkripsi yang ada pada aplikasi ini.</string>
+    <string name="oke"><u>>>oke>></u></string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

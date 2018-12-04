@@ -9,7 +9,8 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        tools:ignore="UselessParent">
 
 
         <LinearLayout
@@ -44,7 +45,8 @@
                 android:text="@string/beli"
                 android:textColor="@color/white"
                 android:background="@color/black"
-                android:textSize="10pt"/>
+                android:textSize="10pt"
+                tools:ignore="ButtonStyle,NestedWeights" />
 
             <Button
                 android:id="@+id/btnPenjual"
@@ -54,7 +56,8 @@
                 android:text="@string/jual"
                 android:textColor="@color/white"
                 android:background="@color/black"
-                android:textSize="10pt"/>
+                android:textSize="10pt"
+                tools:ignore="ButtonStyle" />
 
         </LinearLayout>
     </LinearLayout>
