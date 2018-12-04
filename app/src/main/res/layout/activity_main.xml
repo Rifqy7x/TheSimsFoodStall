@@ -18,8 +18,18 @@
             android:layout_height="match_parent"
             android:orientation="horizontal"
             android:layout_weight="4"
+            android:weightSum="1"
             android:background="@color/black">
 
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="centerInside"
+                android:background="?selectableItemBackground"
+                android:layout_weight="1"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/logodummy" />
         </LinearLayout>
 
         <FrameLayout
@@ -46,6 +56,7 @@
                 android:textColor="@color/white"
                 android:background="@color/black"
                 android:textSize="10pt"
+                android:onClick="onClickPembeli"
                 tools:ignore="ButtonStyle,NestedWeights" />
 
             <Button
@@ -57,6 +68,7 @@
                 android:textColor="@color/white"
                 android:background="@color/black"
                 android:textSize="10pt"
+                android:onClick="onClickPenjual"
                 tools:ignore="ButtonStyle" />
 
         </LinearLayout>

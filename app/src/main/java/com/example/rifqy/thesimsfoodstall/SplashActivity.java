@@ -9,7 +9,7 @@ import android.os.Bundle;
 public class SplashActivity extends AppCompatActivity {
 
     public static final int default_value = 0;
-    Intent nextIntent;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -20,12 +20,13 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 if(getValue() == 0) {
-                    nextIntent = new Intent(SplashActivity.this, DescriptionActivity.class);
+                    Intent nextIntent = new Intent(SplashActivity.this, DescriptionActivity.class);
+                    startActivity(nextIntent);
                 }
                 else {
-                    nextIntent = new Intent(SplashActivity.this, MainActivity.class);
-                }
-                startActivity(nextIntent);
+                    Intent nextIntent = new Intent(SplashActivity.this, MainActivity.class);
+                    startActivity(nextIntent);
+                };
                 finish();
             }
         }, SPLASH_TIME);

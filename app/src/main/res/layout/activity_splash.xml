@@ -7,4 +7,13 @@
     android:background="@color/black"
     tools:context=".SplashActivity">
 
+    <ImageView
+        android:id="@+id/imageSplash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:src="@drawable/logodummy"
+        android:scaleType="center"
+        tools:ignore="ContentDescription,RtlCompat" />
 </RelativeLayout>
