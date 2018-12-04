@@ -10,15 +10,28 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        >
+        android:weightSum="5"
+        tools:ignore="UselessParent">
 
-        <LinearLayout
+        <ImageButton
+            android:id="@+id/btnBacktoMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/logodummy"
+            android:background="@color/black"
+            android:scaleType="centerInside"
+            android:layout_weight="4"
+            android:onClick="btnToMain"
+            tools:ignore="ContentDescription" />
+
+
+        <FrameLayout
+            android:id="@+id/CryptoFrame"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            android:layout_weight="8"
-            android:background="@color/black">
+            android:layout_weight="1">
 
-        </LinearLayout>
+        </FrameLayout>
+
     </LinearLayout>
 </RelativeLayout>
