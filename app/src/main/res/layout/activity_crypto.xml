@@ -10,7 +10,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:weightSum="5"
+        android:weightSum="6"
         tools:ignore="UselessParent">
 
         <ImageButton
@@ -20,7 +20,7 @@
             app:srcCompat="@drawable/logodummy"
             android:background="@color/black"
             android:scaleType="centerInside"
-            android:layout_weight="4"
+            android:layout_weight="5"
             android:onClick="btnToMain"
             tools:ignore="ContentDescription" />
 

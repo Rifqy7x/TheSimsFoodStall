@@ -14,14 +14,13 @@ public class CryptoActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_crypto);
+        changeFragmentCrypto(new InboxCryptoFragment());
     }
 
     public void btnToMain(View view){
         Intent intent = new Intent(CryptoActivity.this, MainActivity.class);
         startActivity(intent);
         finish();
-
-        changeFragmentCrypto(new InboxCryptoFragment());
     }
 
     private void changeFragmentCrypto(Fragment fragment){

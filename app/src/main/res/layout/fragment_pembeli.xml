@@ -5,10 +5,130 @@
     android:layout_height="match_parent"
     tools:context=".PembeliFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical"
+        android:weightSum="13"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/black"
+            android:layout_weight="4">
+
+            <TextView
+                android:layout_marginLeft="5dp"
+                android:layout_weight="1"
+                android:id="@+id/titleNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/titleMakanan"
+                android:textColor="@color/white"
+                android:textSize="7.5pt"
+                android:layout_gravity="bottom"
+                tools:ignore="NestedWeights,RtlHardcoded" />
+
+            <TextView
+                android:id="@+id/titleHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ttlHarga"
+                android:textColor="@color/white"
+                android:textSize="7.5pt"
+                android:layout_gravity="bottom"
+                />
+
+            <TextView
+                android:id="@+id/titleTotal"
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="7.5pt"
+                android:text="@string/ttlTotal"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom"
+                />
+
+            <TextView
+                android:id="@+id/titleBanyak"
+                android:layout_width="wrap_content"
+                android:textSize="7.5pt"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="@string/ttlBanyak"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom"
+                />
+
+            <TextView
+                android:id="@+id/titleTambah"
+                android:layout_width="wrap_content"
+                android:textSize="7.5pt"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/ttlTambah"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom"
+                />
+            <TextView
+                android:id="@+id/titleKurang"
+                android:layout_width="wrap_content"
+                android:textSize="7.5pt"
+                android:layout_height="wrap_content"
+                android:text="@string/ttlKurang"
+                android:textColor="@color/white"
+                android:layout_gravity="bottom"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                tools:ignore="RtlHardcoded" />
+
+        </LinearLayout>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:background="@color/black"
+            android:layout_weight="4">
+
+            <TextView
+                android:id="@+id/tvTotalHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textAlignment="center"
+                android:text="@string/totalHarga"
+                tools:ignore="NestedWeights" />
+
+            <TextView
+                android:id="@+id/tvHarga"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/white"
+                android:layout_gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnConfirm"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="4"
+            android:text="@string/tmblConfirm" />
+
+    </LinearLayout>
 
 </FrameLayout>

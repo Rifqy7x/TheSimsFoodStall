@@ -7,10 +7,17 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.ListView;
 
 
 public class PembeliFragment extends Fragment {
 
+/*
+    String[] Makanan ={"Nasi","sayur kangkung","tahu goreng","tempe goreng","ayam goreng","indomie goreng","indomeie rebus", "telor ceplok","es teh manis","teh manis hangat"};
+*/
+
+    Button confirm;
     public PembeliFragment() {
         // Required empty public constructor
     }
@@ -21,6 +28,13 @@ public class PembeliFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_pembeli,container,false);
 
+        confirm = (Button)view.findViewById(R.id.btnConfirm);
+        confirm.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View v){
+                changeFragment(new PembeliConfirmFragment());
+            }
+        });
         return view;
     }
 
@@ -33,7 +47,5 @@ public class PembeliFragment extends Fragment {
                 .commit();
     }
 
-    public void onNextPembeli(View view){
-        changeFragment(new PembeliConfirmFragment());
-    }
+
 }

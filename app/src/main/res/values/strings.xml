@@ -4,6 +4,15 @@
     <string name="jual">Penjual</string>
     <string name="deskripsi">Aplikasi The Sims Food Stall adalah aplikasi simulasi bagaimana sistem warteg online berlangsung, pengguna akan disajikan 2 <i>POV</i> yaitu penjual dan pembeli, juga pengguna dapat melihat hasil dari proses enkripsi yang ada pada aplikasi ini.</string>
     <string name="oke"><u>>>oke>></u></string>
+    <string name="titleMakanan">Makanan | </string>
+    <string name="ttlHarga">Harga | </string>
+    <string name="ttlBanyak">Banyak | </string>
+    <string name="ttlTotal">Total | </string>
+    <string name="ttlTambah">Tambah | </string>
+    <string name="ttlKurang">Kurang</string>
+    <string name="totalHarga">Total harga : </string>
+    <string name="tmblConfirm">Confirm</string>
+    <string name="nmMakanan">nama makanan</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
