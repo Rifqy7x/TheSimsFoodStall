@@ -29,7 +29,7 @@
                 android:background="?selectableItemBackground"
                 android:layout_weight="1"
                 android:layout_gravity="right"
-                app:srcCompat="@drawable/logodummy"
+                app:srcCompat="@drawable/thesimslogo"
                 android:onClick="btnToCrypto"
                 tools:ignore="ContentDescription,InefficientWeight,NestedWeights,RtlHardcoded" />
         </LinearLayout>
@@ -54,6 +54,7 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:text="@string/beli"
+                android:onClick="onClickPembeli"
                 android:textColor="@color/white"
                 android:background="@color/black"
                 android:textSize="10pt"
@@ -68,6 +69,7 @@
                 android:textColor="@color/white"
                 android:background="@color/black"
                 android:textSize="10pt"
+                android:onClick="onClickPenjual"
                 tools:ignore="ButtonStyle" />
 
         </LinearLayout>

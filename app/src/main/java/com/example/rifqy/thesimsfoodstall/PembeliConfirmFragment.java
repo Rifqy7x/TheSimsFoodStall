@@ -35,7 +35,7 @@ public class PembeliConfirmFragment extends Fragment {
                 .commit();
     }
 
-    public void onConfirmPembeli(View view){
+    public void onClickConfirmPembeli(View view){
         changeFragment(new PembeliFragment());
     }
 

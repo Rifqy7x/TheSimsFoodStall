@@ -34,12 +34,23 @@ public class MainActivity extends AppCompatActivity {
                 .commit();
     }
 
-    public void onClickPembeli(){
+    public void onClickPembeli(View view){
         changeFragment(new PembeliFragment());
     }
 
-    public void onClickPenjual(){
+    public void onClickPembeliConfirm(View view){
+        changeFragment(new PembeliConfirmFragment());
+    }
+
+    public void onClickPenjual(View view){
         changeFragment(new PenjualFragment());
     }
 
+    public void onClickConfirmPembeli(View view){
+        changeFragment(new PembeliFragment());
+    }
+
+    public void onConfirmPenjual(View view){
+        changeFragment(new PenjualFragment());
+    }
 }

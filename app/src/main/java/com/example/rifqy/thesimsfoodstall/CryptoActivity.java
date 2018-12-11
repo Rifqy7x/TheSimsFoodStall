@@ -31,4 +31,8 @@ public class CryptoActivity extends AppCompatActivity {
                 .replace(R.id.CryptoFrame, fragment)
                 .commit();
     }
+
+    public void onBackCrypto(View view){
+        changeFragmentCrypto(new InboxCryptoFragment());
+    }
 }
