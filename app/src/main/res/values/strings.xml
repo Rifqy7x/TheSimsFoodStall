@@ -17,6 +17,7 @@
     <string name="tmblBatal">Batal</string>
     <string name="tmblKembali">Kembali</string>
     <string name="tmblSelesai">Selesai</string>
+    <string name="idPesanan">ID Pesanan</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>
